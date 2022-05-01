@@ -10,7 +10,7 @@ function App(): ReactElement {
         <div className="flex justify-center">
           <img src={logo} className="h-32 w-32 animate-spin-slow" alt="logo" />
         </div>
-        <p className="text-2xl pb-3">Hello Vite + React + tailwindcss!</p>
+        <p className="text-2xl pb-3">Hello Zina + Will + Jana!</p>
         <p>
           <button
             className="bg-purple-400 pl-2 pr-2 pt-1 pb-1 rounded text-sm text-purple-100"
