@@ -1,14 +1,74 @@
-# vite React TypeScript tailwindcss starter
+# Olson Studio
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+Website built with TypeScript, React, Tailwind CSS, & Vite.
 
-## About
+## Usage
 
-Template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+Use the following commands to build and run the app.
 
-![Screenshot](assets/screenshot.png)
+**Install dependencies**
 
-### Libraries
+```bash
+yarn
+```
+
+**Run in development mode**
+
+```bash
+yarn dev
+```
+
+**Build for production locally**
+
+```bash
+yarn build
+```
+
+Outputs to `./dist` folder.
+
+**Serve prod build locally**
+
+```bash
+yarn serve
+```
+
+Accessible at http://localhost:3000
+
+**Run Tests**
+
+```
+yarn test
+```
+
+## Netlify
+
+Pushing to the `prod` branch will auto-deploy to Netlify.
+
+Install netlify command line app
+
+```bash
+npm i -g netlify-cli
+```
+
+Login to netlify
+
+```bash
+ntl login
+```
+
+Show Netlify Status
+
+```bash
+ntl status
+```
+
+Open project site page in Netlify
+
+```bash
+ntl open
+```
+
+### Useful Links
 
 - [Jest](https://jestjs.io/)
 - [React](https://reactjs.org/)
@@ -16,25 +76,9 @@ Template for vite, React + tailwindcss + TypeScript projects with some tools pre
   - [tailwindcss forms plugin](https://tailwindcss-forms.vercel.app/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [vite](https://vitejs.dev/)
-
-### Tools
-
 - [commitlint](https://commitlint.js.org)
 - [Conventional Commits](https://www.conventionalcommits.org)
 - [editorconfig](https://editorconfig.org/)
 - [eslint](https://eslint.org/)
 - [husky](https://typicode.github.io/husky/#/)
 - [Prettier](https://prettier.io/)
-- [VS Code settings](https://code.visualstudio.com/)
-
-## Usage
-
-Create a new project from this template by clicking the "Use this template" button:
-
-![](assets/template-usage.png)
-
-```bash
-yarn
-yarn dev
-yarn test
-```
