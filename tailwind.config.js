@@ -5,5 +5,12 @@ module.exports = {
     extend: {
       opacity: ['disabled']
     }
+  },
+  theme: {
+    extend: {
+      animation: {
+        'spin-slow': 'spin 6s linear infinite'
+      }
+    }
   }
 }
