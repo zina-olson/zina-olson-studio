@@ -12,7 +12,7 @@ function App(): ReactElement {
             alt="logo"
           />
         </div>
-        <p className="text-2xl font-mono pb-3">Olson Studio</p>
+        <p className="text-2xl font-mono pb-3">Zina Olson Studio</p>
         <p></p>
         <p className="text-xs">( More content coming soon )</p>
       </header>
