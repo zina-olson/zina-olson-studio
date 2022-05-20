@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/zina-olson/zina-olson-studio/tree/main.svg?style=svg)](https://circleci.com/gh/zina-olson/zina-olson-studio/tree/main)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/06f78748-6cd9-414e-8c2b-b09f2d9acb02/deploy-status)](https://app.netlify.com/sites/cerulean-cat-86964d/deploys)
+
 Website built with TypeScript, React, Tailwind CSS, & Vite.
 
 ## Usage
