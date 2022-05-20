@@ -1,5 +1,7 @@
 # Olson Studio
 
+[![CircleCI](https://circleci.com/gh/William-Olson/olson-studio-www/tree/main.svg?style=svg)](https://circleci.com/gh/William-Olson/olson-studio-www/tree/main)
+
 Website built with TypeScript, React, Tailwind CSS, & Vite.
 
 ## Usage
