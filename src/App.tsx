@@ -14,7 +14,7 @@ function App(): ReactElement {
         </div>
         <p className="text-2xl font-mono pb-3">Zina Olson Studio</p>
         <p></p>
-        <p className="text-xs text-center">( No More content coming soon )</p>
+        <p className="text-xs text-center">( More content coming soon )</p>
       </header>
     </div>
   )
