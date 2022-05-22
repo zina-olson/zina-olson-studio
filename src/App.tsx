@@ -4,7 +4,7 @@ import logo from './logo.svg'
 function App(): ReactElement {
   return (
     <div className="border border-gray-50 rounded-xl p-20 shadow-xl">
-      <header>
+      <header className="text-center">
         <div className="flex justify-center">
           <img
             src={logo}
@@ -12,9 +12,9 @@ function App(): ReactElement {
             alt="logo"
           />
         </div>
-        <p className="text-2xl font-mono pb-3">Zina Olson Studio</p>
+        <p className="text-2xl font-mono pb-3">Zina Olson</p>
         <p></p>
-        <p className="text-xs text-center">( More content coming soon )</p>
+        <p className="text-xs">( More content coming soon )</p>
       </header>
     </div>
   )
