@@ -1,23 +1,23 @@
-import { ReactElement } from 'react'
-import logo from './logo.svg'
+import { ReactElement } from 'react';
+import logo from './logos/logo.svg';
+import { githubButton } from './social/githubButton';
+import { Nav } from './Nav';
+import { Outlet } from 'react-router-dom';
 
 function App(): ReactElement {
   return (
-    <div className="border border-gray-50 rounded-xl p-20 shadow-xl">
-      <header className="text-center">
-        <div className="flex justify-center">
-          <img
-            src={logo}
-            className="h-32 w-32 hover:animate-spin-slow"
-            alt="logo"
-          />
-        </div>
-        <p className="text-2xl font-mono pb-3">Zina Olson</p>
-        <p></p>
-        <p className="text-xs">( More content coming soon )</p>
-      </header>
+    <div className="my-awesome-app w-full h-full">
+      <div className="flex justify-center">
+        <img src={logo} className="h-32 w-32" alt="logo" />
+      </div>
+      <div className="">
+        <Nav />
+      </div>
+      <div className="border border-gray-50 rounded-xl p-20 shadow-xl">
+        <Outlet />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
