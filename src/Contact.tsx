@@ -11,10 +11,6 @@ export class Contact extends React.Component {
             <td>Email</td>
             <td>rvazina@gmail.com</td>
           </tr>
-          <tr>
-            <td>Phone</td>
-            <td>512-709-4945</td>
-          </tr>
         </table>
         <p className="text-4xl">Social Links</p>
         {githubButton()}

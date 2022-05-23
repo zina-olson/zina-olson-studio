@@ -13,7 +13,7 @@ function App(): ReactElement {
       <div className="">
         <Nav />
       </div>
-      <div className="border border-gray-50 rounded-xl p-20 shadow-xl">
+      <div className="p-20">
         <Outlet />
       </div>
     </div>
