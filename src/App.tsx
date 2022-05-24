@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
 import logo from './logos/logo.svg';
-import { githubButton } from './social/githubButton';
 import { Nav } from './Nav';
 import { Outlet } from 'react-router-dom';
 
