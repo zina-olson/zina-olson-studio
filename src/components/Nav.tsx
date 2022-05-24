@@ -10,7 +10,7 @@ export class Nav extends React.Component {
       ['Contact Me', '/contact']
     ];
     return (
-      <nav className="flex sm:justify-center space-x-4">
+      <nav className="sm:justify-center sm:flex space-x-4 text-center sm:text-left">
         {myArray.map(([title, url]) => (
           <Link to={url}>{title}</Link>
         ))}

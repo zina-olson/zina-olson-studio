@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import App from './App';
-import { About } from './About';
-import { Projects } from './Projects';
-import { Contact } from './Contact';
-import { Resume } from './Resume';
+import { About } from './pages/About';
+import { Projects } from './pages/Projects';
+import { Contact } from './pages/Contact';
+import { Resume } from './pages/Resume';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { githubButton } from './social/githubButton';
-import { linkedinButton } from './social/linkedinButton';
+import { githubButton } from '../social/githubButton';
+import { linkedinButton } from '../social/linkedinButton';
 
 export class Contact extends React.Component {
   public render() {

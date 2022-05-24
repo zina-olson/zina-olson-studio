@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import logo from './logos/logo.svg';
-import { Nav } from './Nav';
+import { Nav } from './components/Nav';
 import { Outlet } from 'react-router-dom';
 
 function App(): ReactElement {
