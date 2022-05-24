@@ -9,7 +9,7 @@ function App(): ReactElement {
       <div className="flex justify-center">
         <img src={logo} className="h-32 w-32" alt="logo" />
       </div>
-      <div className="">
+      <div className="font-semibold">
         <Nav />
       </div>
       <div className="p-20">

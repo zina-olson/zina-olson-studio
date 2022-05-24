@@ -7,11 +7,13 @@ export class About extends React.Component {
     return (
       <div>
         <header className="text-center">
-          <p className="text-2xl font-mono pb-3">Zina Olson</p>
+          <p className="text-2xl font-mono font-semibold pb-3">Zina Olson</p>
           <p></p>
-          <p className="text-xs">( More content coming soon )</p>
-          {githubButton()}
-          {linkedinButton()}
+          <p className="text-xs font-semibold">( More content coming soon )</p>
+          <p className="space-x-4 p-12">
+            {githubButton()}
+            {linkedinButton()}
+          </p>
         </header>
       </div>
     );
