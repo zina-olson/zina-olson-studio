@@ -7,7 +7,7 @@ export class Nav extends React.Component {
       ['Home', '/'],
       ['Projects', '/projects'],
       ['Resume', '/resume'],
-      ['Contact Me', '/contact']
+      ['Contact', '/contact']
     ];
     return (
       <nav className="sm:justify-center sm:flex space-x-4 text-center sm:text-left">
