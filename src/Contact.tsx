@@ -1,5 +1,6 @@
 import React from 'react';
 import { githubButton } from './social/githubButton';
+import { linkedinButton } from './social/linkedinButton';
 
 export class Contact extends React.Component {
   public render() {
@@ -9,8 +10,12 @@ export class Contact extends React.Component {
         <table className="mx-auto mb-11 mt-6 p-6 table-auto">
           <tbody>
             <tr>
-              <td>Github </td>
+              <td>GitHub </td>
               <td> {githubButton()} </td>
+            </tr>
+            <tr>
+              <td>LinkedIn </td>
+              <td> {linkedinButton()} </td>
             </tr>
           </tbody>
         </table>

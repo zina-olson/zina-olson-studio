@@ -1,5 +1,6 @@
 import React from 'react';
 import { githubButton } from './social/githubButton';
+import { linkedinButton } from './social/linkedinButton';
 
 export class About extends React.Component {
   public render() {
@@ -10,6 +11,7 @@ export class About extends React.Component {
           <p></p>
           <p className="text-xs">( More content coming soon )</p>
           {githubButton()}
+          {linkedinButton()}
         </header>
       </div>
     );
