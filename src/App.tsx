@@ -9,7 +9,7 @@ function header() {
       <div className="flex justify-center">
         <img src={logo} className="h-32 w-32" alt="logo" />
       </div>
-      <div className="font-semibold">
+      <div className="font-normal">
         <Nav />
       </div>
     </React.Fragment>
