@@ -103,15 +103,15 @@ export class Resume extends React.Component {
         <p className="pb-4"></p>
         <h3 className={titleStyles}>Education</h3>
         <p>
-          Bachelor of Science in Computer Science, Texas State University. Aug
+          Bachelor of Science in Computer Science, Texas State University | Aug
           2014 - Dec 2016
         </p>
         <p>
-          Master of Engineering Technical Management, Texas A&M University. Aug
+          Master of Engineering Technical Management, Texas A&M University | Aug
           2019 - May 2021
         </p>
         <p>
-          QA Automation Engineer Course at Silicon Valley, CA, QAVS.US April
+          QA Automation Engineer Course at Silicon Valley, CA, QAVS.US | April
           2022-Present
         </p>
         <p className="pb-4"></p>

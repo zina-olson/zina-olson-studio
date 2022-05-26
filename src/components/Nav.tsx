@@ -5,7 +5,7 @@ export class Nav extends React.Component {
   public render() {
     const myArray = [
       ['Home', '/'],
-      ['Projects', '/projects'],
+      // ['Projects', '/projects'],
       ['Resume', '/resume'],
       ['Contact', '/contact']
     ];

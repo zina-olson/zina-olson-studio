@@ -3,7 +3,7 @@ import logo from './logos/logo.svg';
 import { Nav } from './components/Nav';
 import { Outlet } from 'react-router-dom';
 
-function header() {
+function header(): ReactElement {
   return (
     <React.Fragment>
       <div className="flex justify-center">
@@ -16,7 +16,7 @@ function header() {
   );
 }
 
-function content() {
+function content(): ReactElement {
   return (
     <div className="p-20">
       <Outlet />
@@ -24,10 +24,14 @@ function content() {
   );
 }
 
-function footer() {
+function footer(): ReactElement {
   return (
     <footer className="w-full h-32 p-12 text-center text-xs font-semibold">
-      © 2022 Olson Studio. All Rights Reserved.
+      © 2022{' '}
+      <a href="https://olson.studio" rel="noopener" target="_blank">
+        Olson Studio
+      </a>
+      . All Rights Reserved.
     </footer>
   );
 }
