@@ -6,7 +6,7 @@ module.exports = {
       opacity: ['disabled']
     }
   },
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     fontFamily: { sans: ['"Montserrat"'] },
     fontWeight: {

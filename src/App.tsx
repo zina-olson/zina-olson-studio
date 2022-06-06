@@ -38,7 +38,7 @@ function footer(): ReactElement {
 
 function App(): ReactElement {
   return (
-    <div className="my-awesome-app w-full bg-white">
+    <div className="my-awesome-app w-full">
       <div className="header-container">{header()}</div>
       <div className="content-container">{content()}</div>
       <div className="footer-container">{footer()}</div>
