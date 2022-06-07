@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContentPane } from '../components/ContentPane';
 
 export class Resume extends React.Component {
   public render() {
@@ -16,7 +17,7 @@ export class Resume extends React.Component {
     ].join(' ');
     const pStyles: string = ['font-normal', 'list-disc', 'pb-6'].join(' ');
     return (
-      <div className="sm:w-1/2 ml-auto mr-auto">
+      <ContentPane>
         <header className="text-center">
           <p className="text-2xl font-mono font-semibold pb-12">
             Software / QA Automation Engineer
@@ -147,7 +148,7 @@ export class Resume extends React.Component {
         </p>
         <p className="pb-4"></p>
         <p className="font-normal"></p>
-      </div>
+      </ContentPane>
     );
   }
 }

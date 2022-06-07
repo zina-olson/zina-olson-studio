@@ -1,25 +1,22 @@
 import React from 'react';
-import { githubButton } from '../social/githubButton';
-import { linkedinButton } from '../social/linkedinButton';
+import { ContentPane } from '../components/ContentPane';
+import { SocialLinks } from '../components/SocialLinks';
 
 export class Contact extends React.Component {
   public render() {
     return (
-      <div className="text-center font-semibold">
-        <p className="text-4xl">Contact Information</p>
-        <table className="mx-auto mb-11 mt-6 p-6 table-auto">
-          <tbody>
-            <tr>
-              <td>Email: rvazina@gmail.com </td>
-            </tr>
-            <tr>
-              <td className="space-x-4 p-6">
-                {githubButton()} {linkedinButton()}{' '}
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ContentPane className="text-center">
+        <header>
+          <h1 className="text-2xl font-mono font-semibold pb-3">
+            Contact Information
+          </h1>
+        </header>
+
+        <h3 className="text-lg pb-6 font-light pt-6">
+          Email: &nbsp; <a href="mailto:rvazina@gmail.com">rvazina@gmail.com</a>
+        </h3>
+        <SocialLinks />
+      </ContentPane>
     );
   }
 }

@@ -12,7 +12,9 @@ export class Nav extends React.Component {
     return (
       <nav className="sm:justify-center sm:flex space-x-4 text-center sm:text-left">
         {myArray.map(([title, url]) => (
-          <Link to={url}>{title}</Link>
+          <Link key={title} to={url}>
+            {title}
+          </Link>
         ))}
       </nav>
     );
