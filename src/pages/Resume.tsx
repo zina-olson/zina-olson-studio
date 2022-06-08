@@ -35,7 +35,7 @@ export class Resume extends React.Component {
 
         <h3 className={titleStyles}>Experience</h3>
         <h4 className={pStyles}>
-          Quality Assurance Engineer at FindSkills.Inc | January 2016 - Present
+          Quality Assurance Engineer at FindSkills.Inc | May 2022 - Present
         </h4>
         <ul className={listStyles}>
           <li>
