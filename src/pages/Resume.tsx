@@ -20,7 +20,7 @@ export class Resume extends React.Component {
       <ContentPane>
         <header className="text-center">
           <p className="text-2xl font-mono font-semibold pb-12">
-            Software / QA Automation Engineer
+            Software / QA Engineer
           </p>
         </header>
         <h3 className={titleStyles}>Professional Summary</h3>
@@ -97,7 +97,7 @@ export class Resume extends React.Component {
           </li>
         </ul>
         <h4 className={pStyles}>
-          Technical Account Manager at Yardi Systems | Aug 2017 - May 2021
+          Client Success Engineer at Yardi Systems | Aug 2017 - May 2021
         </h4>
         <ul className={listStyles}>
           <li>
