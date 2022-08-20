@@ -1,4 +1,5 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
+import { DarkModeComponent } from './helpers/DarkMode';
 
 export interface ExternalLinkProps {
   dest: string;
@@ -6,7 +7,7 @@ export interface ExternalLinkProps {
   className?: string;
 }
 
-export class ExternalLink extends React.Component<ExternalLinkProps> {
+export class ExternalLink extends DarkModeComponent<ExternalLinkProps> {
   public render() {
     return (
       <a

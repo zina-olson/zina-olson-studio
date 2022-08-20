@@ -1,13 +1,14 @@
 import React, { ReactElement } from 'react';
-import { AppSvgTypes, AppSvgs } from '../logos/LogoTypes';
+import { AppSvgTypes, AppSvgs } from '../svg/AppSvgs';
 import { isDarkMode } from '../utilities/DarkMode';
+import { DarkModeComponent } from './helpers/DarkMode';
 
 export interface GetterParams extends React.SVGProps<ReactElement> {
   type: AppSvgTypes;
   color?: string;
 }
 
-export class AppSvg extends React.Component<GetterParams> {
+export class AppSvg extends DarkModeComponent<GetterParams> {
   public render() {
     const logoGetter = AppSvgs[this.props.type];
     const props = { ...this.props };

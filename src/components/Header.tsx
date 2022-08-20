@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { AppSvgTypes } from '../logos/LogoTypes';
+import { AppSvgTypes } from '../svg/AppSvgs';
 import { AppSvg } from './AppSvg';
 import { Nav } from './Nav';
 

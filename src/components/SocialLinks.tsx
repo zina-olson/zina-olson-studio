@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink } from './ExternalLink';
 import { AppSvg } from './AppSvg';
-import { AppSvgTypes } from '../logos/LogoTypes';
+import { AppSvgTypes } from '../svg/AppSvgs';
 
 export class SocialLinks extends React.Component {
   public render() {
