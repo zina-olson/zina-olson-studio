@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { ExternalLink } from './ExternalLink';
 import { AppSvg } from './AppSvg';
-import { AppSvgTypes } from '../svg/AppSvgs';
+import { AppSvgTypes } from './svg/AppSvgs';
 
 export class SocialLinks extends React.Component {
-  public render() {
+  public render(): ReactElement {
     return (
       <div className="mx-auto mb-11 mt-6 p-6 w-96">
         <div className="max-h-16 overflow-clip flex flex-row">

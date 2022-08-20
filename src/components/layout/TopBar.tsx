@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { emitter, eventNames } from '../../events/EventsApi';
 import { LoginEvent } from '../../events/types/UserEventTypes';
-import { AppSvgTypes } from '../../svg/AppSvgs';
+import { AppSvgTypes } from '../svg/AppSvgs';
 import { AppSvg } from '../AppSvg';
 import { DarkModeComponent, DarkModeComponentState } from '../helpers/DarkMode';
 import { getToggleBtn } from './DarkModeToggle';
-
+import { ReactElement } from 'react';
 
 interface TopBarProps {}
+
 interface TopBarState extends DarkModeComponentState {
   user?: { avatar?: string };
 }
@@ -18,24 +19,25 @@ export class TopBar extends DarkModeComponent<TopBarProps, TopBarState> {
     this.handleLogin = this.handleLogin.bind(this);
   }
 
-  handleLogin(event: LoginEvent) {
+  handleLogin(event: LoginEvent): void {
     this.setState({
       user: { avatar: event.user?.avatar }
     });
   }
 
   public componentDidMount(): void {
-    const { userLogin, userInfo } = eventNames;
+    const { userLogin, userInfo, darkMode } = eventNames;
     emitter.on([userLogin, userInfo], this.handleLogin);
-    emitter.on('darkMode', this.handleDarkModeChange);
+    emitter.on(darkMode, this.handleDarkModeChange);
   }
 
-  public componentWillUnmount() {
-    emitter.off(['userLogin', 'userInfo'], this.handleLogin);
-    emitter.off('darkMode', this.handleDarkModeChange);
+  public componentWillUnmount(): void {
+    const { userLogin, userInfo, darkMode } = eventNames;
+    emitter.off([userLogin, userInfo], this.handleLogin);
+    emitter.off(darkMode, this.handleDarkModeChange);
   }
 
-  public render() {
+  public render(): ReactElement {
     const darkModeType = this.state.darkModeType;
     const isDark = this.state.isDark === true;
 

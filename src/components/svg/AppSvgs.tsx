@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import { ReactElement, SVGProps } from 'react';
 
 export enum AppSvgTypes {
   Logo = 'logo',
@@ -10,7 +10,10 @@ export enum AppSvgTypes {
 }
 
 export const AppSvgs = {
-  [AppSvgTypes.LinkedIn]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.LinkedIn]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         fill={color || '#1A0609'}
@@ -23,7 +26,10 @@ export const AppSvgs = {
     );
   },
 
-  [AppSvgTypes.GitHub]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.GitHub]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +42,10 @@ export const AppSvgs = {
     );
   },
 
-  [AppSvgTypes.Plus]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.Plus]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +65,10 @@ export const AppSvgs = {
     );
   },
 
-  [AppSvgTypes.Sun]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.Sun]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +88,10 @@ export const AppSvgs = {
     );
   },
 
-  [AppSvgTypes.Moon]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.Moon]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +111,10 @@ export const AppSvgs = {
     );
   },
 
-  [AppSvgTypes.Logo]: (color: string, props: SVGProps<any> = {}) => {
+  [AppSvgTypes.Logo]: (
+    color: string,
+    props: SVGProps<SVGSVGElement> = {}
+  ): ReactElement => {
     return (
       <svg
         version="1.1"

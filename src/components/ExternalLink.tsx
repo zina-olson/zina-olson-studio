@@ -8,7 +8,7 @@ export interface ExternalLinkProps {
 }
 
 export class ExternalLink extends DarkModeComponent<ExternalLinkProps> {
-  public render() {
+  public render(): ReactElement {
     return (
       <a
         className={this.props.className}

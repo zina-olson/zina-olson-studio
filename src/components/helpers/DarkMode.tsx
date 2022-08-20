@@ -1,6 +1,9 @@
 import React from 'react';
 import { emitter } from '../../events/EventsApi';
-import { DarkModeChangeEvent, DarkModeTypes } from '../../events/types/DarkModeEventTypes';
+import {
+  DarkModeChangeEvent,
+  DarkModeTypes
+} from '../../events/types/DarkModeEventTypes';
 import { getDarkModeType, isDarkMode } from '../../utilities/DarkMode';
 
 export interface DarkModeComponentProps {}
@@ -9,6 +12,14 @@ export interface DarkModeComponentState {
   darkModeType: DarkModeTypes;
 }
 
+/*
+ * Extend this class to have your component re-render on
+ * DarkModeChangeEvents.
+ *
+ * Note: You must implement the on/off logic yourself if you
+ *       override componentDidMount or componentWillUnmount
+ *       methods in your sub class.
+ */
 export class DarkModeComponent<
   T extends DarkModeComponentProps = DarkModeComponentProps,
   V extends DarkModeComponentState = DarkModeComponentState
@@ -22,22 +33,22 @@ export class DarkModeComponent<
     } as V;
   }
 
-  public componentDidMount() {
+  public componentDidMount(): void {
     emitter.on('darkMode', this.handleDarkModeChange);
   }
 
-  public componentWillUnmount() {
+  public componentWillUnmount(): void {
     emitter.off('darkMode', this.handleDarkModeChange);
   }
 
-  protected handleDarkModeChange(changed: DarkModeChangeEvent) {
+  protected handleDarkModeChange(changed: DarkModeChangeEvent): void {
     this.setState({
       darkModeType: changed.darkModeType,
       isDark: changed.isDarkMode
     });
   }
 
-  public getDarkModeState() {
+  public getDarkModeState(): DarkModeComponentState {
     const { darkModeType, isDark } = this.state;
     return { darkModeType, isDark };
   }

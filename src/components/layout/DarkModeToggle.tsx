@@ -1,19 +1,22 @@
-
 import { DarkModeTypes } from '../../events/types/DarkModeEventTypes';
-import { AppSvgTypes } from '../../svg/AppSvgs';
+import { AppSvgTypes } from '../svg/AppSvgs';
 import { toggleDarkMode } from '../../utilities/DarkMode';
 import { Theme } from '../../utilities/Theme';
 import { AppSvg } from '../AppSvg';
+import { ReactElement } from 'react';
 
-export const getToggleBtn = (isDark: boolean, modeType: DarkModeTypes) => {
-  const handleMode = (mode: DarkModeTypes) => {
+export const getToggleBtn = (
+  isDark: boolean,
+  modeType: DarkModeTypes
+): ReactElement => {
+  const handleMode = (mode: DarkModeTypes): void => {
     toggleDarkMode(mode);
   };
 
   switch (modeType) {
     case DarkModeTypes.ON:
       return (
-        <button onClick={() => handleMode(DarkModeTypes.OFF)}>
+        <button onClick={(): void => handleMode(DarkModeTypes.OFF)}>
           <AppSvg
             className="pl-4 h-8 w-10 -mt-2 cursor-pointer"
             type={AppSvgTypes.Moon}
@@ -23,7 +26,7 @@ export const getToggleBtn = (isDark: boolean, modeType: DarkModeTypes) => {
       );
     case DarkModeTypes.OFF:
       return (
-        <button onClick={() => handleMode(DarkModeTypes.SYSTEM)}>
+        <button onClick={(): void => handleMode(DarkModeTypes.SYSTEM)}>
           <AppSvg
             className="pl-4 h-8 w-10 -mt-2 cursor-pointer"
             type={AppSvgTypes.Sun}
@@ -34,7 +37,7 @@ export const getToggleBtn = (isDark: boolean, modeType: DarkModeTypes) => {
     case DarkModeTypes.SYSTEM:
       if (isDark) {
         return (
-          <button onClick={() => handleMode(DarkModeTypes.ON)}>
+          <button onClick={(): void => handleMode(DarkModeTypes.ON)}>
             <AppSvg
               className="pl-4 h-8 w-10 -mt-2 cursor-pointer"
               type={AppSvgTypes.Moon}
@@ -44,7 +47,7 @@ export const getToggleBtn = (isDark: boolean, modeType: DarkModeTypes) => {
         );
       }
       return (
-        <button onClick={() => handleMode(DarkModeTypes.ON)}>
+        <button onClick={(): void => handleMode(DarkModeTypes.ON)}>
           <AppSvg
             className="pl-4 h-8 w-10 -mt-2 cursor-pointer"
             type={AppSvgTypes.Sun}
@@ -54,5 +57,6 @@ export const getToggleBtn = (isDark: boolean, modeType: DarkModeTypes) => {
       );
     default:
       console.error('Unsupported dark mode type type ', modeType);
+      return <></>;
   }
 };

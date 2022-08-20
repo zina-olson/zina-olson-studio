@@ -1,4 +1,4 @@
-import { DarkModeTypes } from "../events/types/DarkModeEventTypes";
+import { DarkModeTypes } from '../events/types/DarkModeEventTypes';
 import { signalDarkModeChange } from '../events/EventsApi';
 
 export const isDarkMode: () => boolean = (): boolean => {
@@ -31,7 +31,7 @@ export const toggleDarkMode = (mode: DarkModeTypes): void => {
   loadDarkModeFromCache();
 };
 
-export const loadDarkModeFromCache = () => {
+export const loadDarkModeFromCache = (): void => {
   let darkMode = false;
   // based on system or cache
   if (!localStorage.theme) {

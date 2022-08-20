@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 export class Projects extends React.Component {
-  public render() {
+  public render(): ReactElement {
     return (
       <div>
         <p className="">

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
 export class Nav extends React.Component {
-  public render() {
+  public render(): ReactElement {
     const myArray = [
       ['Home', '/'],
       // ['Projects', '/projects'],

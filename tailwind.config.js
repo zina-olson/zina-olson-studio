@@ -25,6 +25,7 @@ module.exports = {
         'spin-slow': 'spin 6s linear infinite'
       }
     },
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
@@ -35,6 +36,7 @@ module.exports = {
       accent: '#711c1c',
       'accent-dark': '#490900'
     }),
+    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     borderColor: ({ theme }) => ({
       ...theme('colors'),
       DEFAULT: theme('colors.gray.200', 'currentColor')

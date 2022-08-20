@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { AppSvgTypes } from '../svg/AppSvgs';
-import { AppSvg } from './AppSvg';
+import { AppSvg } from '../AppSvg';
 import { Nav } from './Nav';
 
 export function Header(): ReactElement {

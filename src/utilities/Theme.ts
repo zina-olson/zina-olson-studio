@@ -1,4 +1,3 @@
-
 export const Theme = {
   colors: {
     accent: '#711c1c',

@@ -4,6 +4,10 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended'
   ],
+  rules: {
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/explicit-function-return-type': 1
+  },
   env: {
     node: true,
     mocha: true,

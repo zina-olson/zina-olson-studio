@@ -1,9 +1,9 @@
-import React from 'react';
-import { SocialLinks } from '../components/SocialLinks';
-import { ContentPane } from '../components/ContentPane';
+import React, { ReactElement } from 'react';
+import { SocialLinks } from '../SocialLinks';
+import { ContentPane } from '../layout/ContentPane';
 
 export class About extends React.Component {
-  public render() {
+  public render(): ReactElement {
     return (
       <ContentPane className="text-center">
         <header>

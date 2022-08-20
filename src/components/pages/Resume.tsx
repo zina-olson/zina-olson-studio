@@ -1,8 +1,8 @@
-import React from 'react';
-import { ContentPane } from '../components/ContentPane';
+import React, { ReactElement } from 'react';
+import { ContentPane } from '../layout/ContentPane';
 
 export class Resume extends React.Component {
-  public render() {
+  public render(): ReactElement {
     const titleStyles: string = [
       'text-lg',
       'pb-6',
