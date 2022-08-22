@@ -32,7 +32,6 @@ export default class App extends DarkModeComponent {
     }
   }
   render(): ReactElement {
-
     return (
       <div className="my-awesome-app w-full">
         <div className="md:w-90 max-w-90 h-56px">
