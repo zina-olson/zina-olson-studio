@@ -8,6 +8,7 @@ const STUDIO_API_BASE_URL =
 
 export class StudioApiService {
   public async getUserInfo(token: string): Promise<StudioApiUser> {
+    console.log('fetching: ', `${STUDIO_API_BASE_URL}/me`);
     return (
       await axios.request({
         url: `${STUDIO_API_BASE_URL}/me`,
